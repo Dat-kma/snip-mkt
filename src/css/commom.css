@@ -1,0 +1,219 @@
+body{
+    background-color: #c7ecee;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 50px;
+    color:#ff8916;
+    font-size: 40px;
+}
+h2,h4{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 40px;
+    font-size: 24px;
+}
+
+.cicle-bg{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    position: absolute;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-image: url(../images/blackSpin.png);
+}
+.hidden{
+    display: none;
+}
+.cicle__content{
+    position: absolute;
+    top: 0;
+}
+.listChoice {
+    padding: 20px 5px;
+    background: gray;
+    border: 1px solid wheat;
+    height: auto;
+}
+.listChoice ul li{
+    padding: 5px;
+    display: flex;
+}
+.applyChanges{
+    margin: 5px 0;
+    width: 100%;
+    background-color: #1abc9c;
+    color: white;
+}
+.form-control{
+    border-radius: 5px 0 0 5px;
+}
+.btn-danger{
+    border-radius: 0px 5px 5px 0px;
+}
+.spin{
+    position: relative;
+    overflow: hidden;
+}
+.arrow{
+    width: 68px;
+    height: 68px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -34px 0 0 -34px;
+    border-radius: 50%;
+    box-shadow: rgba(0,0,0,0.1) 0px 3px 0px;
+    z-index: 1000;
+    background: #fff;
+    cursor: pointer;
+    font-family: 'Exo 2', sans-serif;
+}
+.arrow:before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 20px 28px 20px;
+    border-color: transparent transparent #ffffff transparent;
+    top: -12px;
+    left: 14px;
+}
+.arrow:after{
+    content: "SPIN";
+    text-align: center;
+    line-height: 68px;
+    color: #CCC;
+    text-shadow: 0 2px 0 #fff, 0 -2px 0 rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 100000;
+    width: 68px;
+    height: 68px;
+    display: block;
+}
+.arrow-spin{
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -27px 0 0 -27px;
+    border-radius: 50%;
+    background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(234,234,234,1) 100%);
+    z-index: 999;
+    box-shadow: rgba(255,255,255,1) 0px -2px 0px inset, rgba(255,255,255,1) 0px 2px 0px inset, rgba(0,0,0,0.4) 0px 0px 5px;
+}
+
+
+.loading {
+    transform: rotate(12785deg);
+    transition: all 6s cubic-bezier(0,.99,.44,.99);
+}
+
+.funkyradio{
+    display: flex;
+    flex-wrap:wrap;
+}
+.add-choice{
+    text-align: center;
+    line-height: 50px;
+    padding: 20px 5px;
+    background: gray;
+    border: 1px solid wheat;
+    height: auto;
+}
+.add-member{
+    display: flex;
+}
+.list-button{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.task5 span {
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    display: block;
+    z-index: 10;
+    -webkit-transform: rotate(90deg) translate(-50%,0%);
+    transform: rotate(90deg) translate(-50%,0%);
+    transform-origin: 0 50%;
+    font-size: 18px;
+}
+
+
+/*STYLE ALERT*/
+.swal-overlay{
+    transition:unset;
+}
+.swal-button:focus{
+    outline: none;
+    box-shadow: unset;
+}
+.swal-button:not([disabled]):hover{
+    background-color: #ffc317;
+}
+.swal-button-container{
+    width: 100%;
+    text-align: center;
+}
+.swal-button{
+    background-color: #ff8916;
+}
+.swal-overlay--show-modal .swal-modal{
+    position: absolute;
+    transform: translateX(-50%);
+    animation: unset;
+    transition: unset;
+}
+
+.checkbox{
+    width: 100%!important;
+    display: flex;
+    margin-top: 20px;
+}
+.checkbox .box{
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.checkbox .active{
+    background-color: #f0ad4e;
+}
+
+.checkbox .checkbox-text{
+    margin: 10px;
+    padding-left: 15px;
+}
+
+
+.funkyradio div:hover .close-member{
+    visibility: visible;
+    opacity: 1;
+}
+.close-member{
+    position: absolute;
+    top: 24px;
+    left: 33px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.funkyradio div {
+    overflow: hidden;
+    width: 50%;
+    position: relative;
+}
+.vnt-footer__bottom{background-color:#ff8917;padding:10px 0}.vnt-footer__bottom__text{font-size:11px;color:#fff;display:block;white-space:nowrap;margin-top:10px}@media (min-width:768px){.vnt-footer__bottom__text{font-size:12px;text-align:right}}@media (min-width:992px){.vnt-footer__bottom__text{text-align:left}}.vnt-footer__bottom__img{display:block;text-align:right}@media (min-width:768px){.vnt-footer__bottom__img{text-align:left}}.vnt-footer__bottom__img span{vertical-align:middle}.nav-footer__link{color:#666}.nav-footer__link:hover{color:#ff8917}.contact-footer__mail>a{color:#666}.contact-footer__mail>a:hover{color:#ff8917}.social-footer{margin-top:10px}.social-footer a{float: right;font-size:12px;color:#fff;display:inline-block;margin-right:15px}.social-footer a .fab{padding-right:5px;font-size:18px}@media (max-width:991px){.contact-footer{border-bottom:1px solid #ddd}.social-footer{text-align:center}.app-footer{display:flex}.app-footer__item{margin-right:15px}}.vnt-news{margin-bottom:30px}.vnt-news__content{display:flex;flex-wrap:wrap}@media (min-width:768px){.vnt-news__content{justify-content:space-between;align-items:center;width:100%}}.vnt-news__item{width:50%;text-align:center;margin:15px 0}@media (min-width:768px){.vnt-news__item{width:auto}}@media (min-width:992px){.vnt-news__item{width:calc(100%/6);margin:0}}.vnt-news__item a{display:block}.dropdown.dropdown_footer .form-control{line-height:30px}.dropdown.dropdown_footer .form-control:active{background-color:#f5f5f5}.dropdown.dropdown_footer .dropdown-menu{height:140px;overflow-y:auto;-webkit-overflow-scrolling:touch}
